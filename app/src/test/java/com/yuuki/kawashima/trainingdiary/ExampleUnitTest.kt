@@ -1,4 +1,4 @@
-package com.yuuki.kawashima.traningdiary
+package com.yuuki.kawashima.trainingdiary
 
 import org.junit.Test
 

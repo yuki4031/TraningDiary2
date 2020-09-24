@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yuuki.kawashima.traningdiary">
+    package="com.yuuki.kawashima.trainingdiary">
 
     <application
         android:name=".TaskApp"
@@ -11,13 +11,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".LogInputActivity"
+            android:label="回数"
+            android:parentActivityName=".LogpageActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yuuki.kawashima.trainingdiary.LogpageActivity" />
+        </activity>
+        <activity
+            android:name=".LogpageActivity"
+            android:label="記録"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yuuki.kawashima.trainingdiary.MainActivity" />
+        </activity>
+        <activity
             android:name=".InputActivity"
             android:label="トレーニング名"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.yuuki.kawashima.traningdiary.MainActivity"/>
+                android:value="com.yuuki.kawashima.trainingdiary.MainActivity" />
         </activity>
         <activity
             android:name=".MainActivity"

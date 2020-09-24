@@ -6,26 +6,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <EditText
-        android:id="@+id/edittext_training_name"
+        android:id="@+id/editText_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="トレーニング名を入力"
-        android:inputType="textPersonName"
+        android:hint="回数を入力"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/add_button"
+        android:id="@+id/save_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="保存"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edittext_training_name"
-        app:layout_constraintStart_toStartOf="@+id/edittext_training_name"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_training_name" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_number" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

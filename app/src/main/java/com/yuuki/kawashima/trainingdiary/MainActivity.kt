@@ -1,4 +1,4 @@
-package com.yuuki.kawashima.traningdiary
+package com.yuuki.kawashima.trainingdiary
 
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -12,7 +12,7 @@ import java.util.*
 import android.content.Intent
 import androidx.appcompat.app.AlertDialog
 
-const val EXTRA_TASK = "com.yuuki.kawashima.traningdiary.TASK"
+const val EXTRA_TASK = "com.yuuki.kawashima.trainingdiary.TASK"
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         listView1.setOnItemClickListener{parent, _, position, _ ->
             //入力・編集する画面に遷移させる
             val task = parent.adapter.getItem(position) as Task
-            val intent = Intent(this@MainActivity,InputActivity::class.java)
+            val intent = Intent(this@MainActivity,LogpageActivity::class.java)
             intent.putExtra(EXTRA_TASK,task.id)
             startActivity(intent)
         }
@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun reloadListView(){
 
-        val taskRealmResults = mRealm.where(Task::class.java).findAll().sort("date",Sort.DESCENDING)
+        val taskRealmResults = mRealm.where(Task::class.java).findAll()
         mTaskAdapter.taskList = mRealm.copyFromRealm(taskRealmResults)
         listView1.adapter = mTaskAdapter
         mTaskAdapter.notifyDataSetChanged()

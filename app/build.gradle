@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "com.yuuki.kawashima.traningdiary"
+        applicationId "com.yuuki.kawashima.trainingdiary"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1

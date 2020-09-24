@@ -1,4 +1,4 @@
-package com.yuuki.kawashima.traningdiary
+package com.yuuki.kawashima.trainingdiary
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.yuuki.kawashima.traningdiary", appContext.packageName)
+        assertEquals("com.yuuki.kawashima.trainingdiary", appContext.packageName)
     }
 }

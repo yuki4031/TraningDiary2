@@ -1,4 +1,4 @@
-package com.yuuki.kawashima.traningdiary
+package com.yuuki.kawashima.trainingdiary
 
 import android.app.Application
 import io.realm.Realm

@@ -7,14 +7,14 @@
     android:fitsSystemWindows="true"
     tools:context=".LogpageActivity">
 
-    <ListView
-        android:id="@+id/listView1"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        <ListView
+        android:id="@+id/listView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="624dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fab2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"

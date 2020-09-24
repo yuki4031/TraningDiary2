@@ -1,4 +1,4 @@
-package com.yuuki.kawashima.traningdiary
+package com.yuuki.kawashima.trainingdiary
 
 import java.io.Serializable
 import java.util.Date
@@ -6,7 +6,7 @@ import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
 
 open class Task: RealmObject(),Serializable {
-    var trainingName: String = "" //タイトル
+    var trainingName: String = "" //トレーニング名
 
     // idをプライマリーキーとして設定
     @PrimaryKey

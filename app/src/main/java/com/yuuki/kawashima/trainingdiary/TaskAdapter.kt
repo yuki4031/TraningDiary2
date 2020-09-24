@@ -1,4 +1,4 @@
-package com.yuuki.kawashima.traningdiary
+package com.yuuki.kawashima.trainingdiary
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -28,7 +28,7 @@ class TaskAdapter(context: Context): BaseAdapter() {
     }
 
     override fun getItemId(position: Int): Long {
-        return 0
+        return taskList[position].id.toLong()
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {

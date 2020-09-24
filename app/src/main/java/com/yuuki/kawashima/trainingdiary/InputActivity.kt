@@ -1,4 +1,4 @@
-package com.yuuki.kawashima.traningdiary
+package com.yuuki.kawashima.trainingdiary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,6 +26,9 @@ class InputActivity : AppCompatActivity() {
         val realm = Realm.getDefaultInstance()
         mTask = realm.where(Task::class.java).equalTo("id",taskId).findFirst()
         realm.close()
+        if(mTask != null){
+            edittext_training_name.setText(mTask!!.trainingName)
+        }
     }
 
     private fun addTask(){
